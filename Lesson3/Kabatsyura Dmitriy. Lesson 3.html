@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Кабацюра Дмитрий. Лекция 3</title>
+</head>
+<body>
+	<div>
+		<p>1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100</p>
+		<script>
+			var i = 0;
+			var n = 100;
+			while(i <= n){
+				document.write(i++ + " ");
+			}
+		</script>
+	</div>
+	<div>
+	<p>2. С помощью цикла do…while написать функцию для вывода чисел от 0 до 10, чтобы
+результат выглядел так:</p>
+	<script>
+		var index = 0;
+		do{
+			if(index == 0)
+			{
+				document.write(index + " это ноль<br/>");
+			}
+			else if(index % 2 == 0)
+			{
+				document.write(index + " это четное число<br/>");
+			}
+			else
+			{
+				document.write(index + " это нечетное число<br/>");
+			}
+			index++;
+		}while(index <= 10);
+	</script>
+	<div>
+		<p>3. Вывести с помощью цикла for числа от 0 до 9, НЕ используя тело цикла. То есть
+	выглядеть должно вот так:<br/>
+	for(…){// здесь пусто}
+		</p>
+		<script>
+			for(var number = 0; number <= 9; document.write(number++ + " ")){}
+		</script>	
+	</div>
+	<div>
+		<p>4. Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей
+пирамиды должно быть 20 рядов. Вывести результат через console.log().
+		</p>
+		<script>
+			for(var i = 1, pyramid = " "; i <= 20; i++){
+				pyramid += "x";
+				console.log(pyramid);
+			}
+		</script>	
+	</div>
+</body>
+</html>
